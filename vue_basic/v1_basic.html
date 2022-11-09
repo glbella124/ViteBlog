@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>v1-计算属性与监视</title>
+    <script src="./js/vue.js"></script>
+</head>
+<body>
+    <div id="root">
+        <h1>Hello, this is {{name}}'s website</h1>
+    </div>
+    <script>
+        // 阻止vue在启动时生成生产提示
+        // 容器和实例一一对应
+        Vue.config.productionTip = false
+        // 创建Vue实例,配置对象
+        const vm = new Vue({
+            el:"#root",
+            data:{
+                name:"Bella"
+            }
+        })
+    </script>
+</body>
+</html>
